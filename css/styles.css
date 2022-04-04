@@ -1,0 +1,75 @@
+body {
+  font-family: "Ubuntu Mono", monospace;
+  background-color: whitesmoke;
+}
+
+header {
+  font-size: 23px;
+  background-color: #6d298e;
+  color: white;
+  width: 100vw;
+  padding-bottom: 0.7em;
+  padding-left: 290px;
+  padding-top: 0.5em;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.placeholder {
+  width: 25vw;
+  height: 50vh;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+
+label {
+  font-weight: bold;
+}
+
+.form-container {
+  display: flex;
+}
+
+.notes {
+  border: solid 2px gray;
+  border-radius: 5px;
+  line-height: 14em;
+  width: 55em;
+  margin-top: 1em;
+}
+
+.notes-label {
+  font-weight: bold;
+}
+
+.save {
+  border-radius: 5px;
+  background-color: #6d298e;
+  color: white;
+  width: 70px;
+  height: 30px;
+  margin-left: 80%;
+  margin-top: 3%;
+  margin-bottom: 20em;
+  font-size: 14px;
+  border: none;
+}
+
+.title {
+  line-height: 30px;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.photourl {
+  line-height: 30px;
+  width: 300px;
+  margin-top: 1em;
+}
+
+.title-container {
+  margin-bottom: 3em;
+  margin-top: 2em;
+}
