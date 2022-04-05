@@ -6,6 +6,9 @@
   <title>Code Journal</title>
   <link rel="icon" href="images/favicon.ico">
   <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Proza+Libre&family=Ubuntu+Mono&display=swap"
+    rel="stylesheet">
+  <link
     rel="stylesheet"
     crossorigin="anonymous"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
@@ -15,9 +18,53 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <header>
-  </header>
   <main>
+    <header>
+      <div class="container">
+        <h3>Code Journal</h3>
+      </div>
+    </header>
+    <div class="container">
+      <form class="form">
+        <div data-view="entry-form"></div>
+        <h2 class="new-entry">New Entry</h2>
+        <div class="row">
+          <div class="column-half">
+            <img src="images/placeholder-image-square.jpg" class="placeholder">
+          </div>
+          <div class="column-half">
+            <div class="form-container">
+              <div class="title-container">
+                <div class="label">
+                  <label for="titleForm">Title</label>
+                </div>
+                <div class="input">
+                  <input name="title" type="text" class="input-title" required>
+                </div>
+              </div>
+              <div class="label">
+                <label for="photoUrl">Photo URL</label>
+              </div>
+              <div class="input">
+                <input name="photoUrl" type="url" class="photourl" required>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="column-full">
+            <div class="label">
+              <label for="notes">Notes</label>
+            </div>
+            <div class="input">
+              <textarea name="notes" class="notes" style="resize: none;" rows="5" required></textarea>
+            </div>
+            <div class="save-button">
+              <button type="submit" class="save">SAVE</button>
+            </div>
+          </div>
+        </div>
+    </div>
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
