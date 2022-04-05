@@ -16,53 +16,51 @@
 </head>
 <body>
   <main>
-    <div class="row">
-      <div class="column-full">
-        <header>
-          Code Journal
-        </header>
+    <header>
+      <div class="container">
+        <h3>Code Journal</h3>
       </div>
-    </div>
+    </header>
     <div class="container">
-      <div class="row">
-        <div class="column-full">
-          <div data-view="entry-form"></div>
-          <h2>New Entry</h2>
-        </div>
-      </div>
-      <div class="row">
-        <div class="column-half">
-          <input type="image" src="images/placeholder-image-square.jpg" class="placeholder">
-        </div>
-        <div class="column-half">
-          <div class="form-container">
-            <form>
+      <form class="form">
+        <div data-view="entry-form"></div>
+        <h2 class="new-entry">New Entry</h2>
+        <div class="row">
+          <div class="column-half">
+            <img src="images/placeholder-image-square.jpg" class="placeholder">
+          </div>
+          <div class="column-half">
+            <div class="form-container">
               <div class="title-container">
-                <div>
-                  <label for="titleForm" class="title-form">Title</label>
+                <div class="label">
+                  <label for="titleForm">Title</label>
                 </div>
-                <input type="text" class="title">
+                <div class="input">
+                  <input name="title" type="text" class="input-title" required>
+                </div>
               </div>
-              <div>
-                <label for="photoURL" class="photo-url">Photo URL</label>
+              <div class="label">
+                <label for="photoUrl">Photo URL</label>
               </div>
-              <input type="url" class="photourl">
+              <div class="input">
+                <input name="photoUrl" type="url" class="photourl" required>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row">
-        <div class="column-full">
-          <div>
-            <label for="notes" class="notes-label">Notes</label>
+        <div class="row">
+          <div class="column-full">
+            <div class="label">
+              <label for="notes">Notes</label>
+            </div>
+            <div class="input">
+              <textarea name="notes" class="notes" style="resize: none;" rows="5" required></textarea>
+            </div>
+            <div class="save-button">
+              <button type="submit" class="save">SAVE</button>
+            </div>
           </div>
-          <input type="text" class="notes">
         </div>
-      </div>
-      <div class="row">
-        <div class="column-full">
-          <button class="save">SAVE</button>
-        </div>
-      </div>
     </div>
   </main>
   <script src="js/data.js"></script>
