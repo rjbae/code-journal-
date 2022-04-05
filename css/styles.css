@@ -1,22 +1,25 @@
 body {
-  font-family: "Proza Libre", sans-serif;
   background-color: #f0f0f0;
 }
 
 header {
   background-color: purple;
   color: white;
-  padding: 0.01rem 0;
+  padding: 1px;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 30px;
   margin-top: 20px;
+  font-family: "Proza Libre", sans-serif;
+  margin-left: 8px;
 }
 
 h3 {
   font-weight: normal;
-  font-size: 20px;
+  font-size: 25px;
+  font-family: "Proza Libre", sans-serif;
+  margin-left: 8px;
 }
 
 .placeholder {
@@ -25,23 +28,31 @@ h3 {
   object-fit: cover;
 }
 
-label {
-  font-weight: bold;
-}
-
 .label {
-  padding: 10px;
   padding-top: 3em;
+  font-family: "Proza Libre", sans-serif;
+  font-weight: bold;
+  padding-bottom: 0.5em;
 }
 
 .input-title {
-  height: 2.5em;
+  line-height: 2em;
   width: 100%;
+  font-size: 18px;
+}
+
+.input-title:focus {
+  outline-color: purple;
 }
 
 .photourl {
-  height: 2.5em;
+  line-height: 2em;
   width: 100%;
+  font-size: 18px;
+}
+
+.photourl:focus {
+  outline-color: purple;
 }
 
 .notes {
@@ -49,6 +60,12 @@ label {
   border-radius: 5px;
   width: 100%;
   height: 200px;
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+.notes:focus {
+  outline-color: purple;
 }
 
 .input {
@@ -63,7 +80,7 @@ label {
   max-width: 100%;
   height: 30px;
   margin-bottom: 10em;
-  font-size: 14px;
+  font-size: 16px;
   border: none;
 }
 
