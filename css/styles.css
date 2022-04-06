@@ -89,9 +89,9 @@ h3 {
   padding-top: 12em;
 }
 
-.form {
+/* .form {
   display: none;
-}
+} */
 
 .entries-header {
   font-family: "Proza Libre", sans-serif;
@@ -117,18 +117,24 @@ ul {
   list-style: none;
 }
 
-.dummy-img {
+.entry-img {
   width: 100%;
   height: 250px;
   object-fit: contain;
-  object-position: left;
   margin-top: 5em;
 }
 
-.dummy-header {
+.entry-header {
   font-size: 30px;
 }
 
-.dummy-text {
+.entry-text {
   margin-top: 0;
+  font-family: sans-serif;
+  line-height: 30px;
+}
+
+p {
+  font-family: sans-serif;
+  line-height: 2em;
 }
