@@ -60,7 +60,7 @@ function renderEntry(entry) {
   return list;
 }
 
-var list = document.querySelector('ul');
+var list = document.querySelector('.entries-list');
 document.addEventListener('DOMContentLoaded', DOMContentLoaded);
 
 function DOMContentLoaded(event) {
