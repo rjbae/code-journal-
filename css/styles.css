@@ -103,7 +103,6 @@ h3 {
   background-color: purple;
   color: white;
   width: 70px;
-  max-width: 100%;
   height: 30px;
   font-size: 16px;
   border: none;
@@ -111,4 +110,25 @@ h3 {
 
 .new-button {
   text-align: right;
+  padding-top: 2.5em;
+}
+
+ul {
+  list-style: none;
+}
+
+.dummy-img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  object-position: left;
+  margin-top: 5em;
+}
+
+.dummy-header {
+  font-size: 30px;
+}
+
+.dummy-text {
+  margin-top: 0;
 }
