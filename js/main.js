@@ -69,3 +69,24 @@ function DOMContentLoaded(event) {
     list.appendChild(entry);
   }
 }
+
+var entriesNav = document.querySelector('.entriesNav');
+entriesNav.addEventListener('click', viewEntries);
+
+var newEntry = document.querySelector('.new-entry-button');
+newEntry.addEventListener('click', createEntries);
+
+var entryForm = document.querySelector('.entry-form');
+var entriesList = document.querySelector('.entries');
+
+function viewEntries(event) {
+  entryForm.className = 'container entry-form hidden';
+  entriesList.className = 'container entries';
+  data.view = 'entries';
+}
+
+function createEntries(event) {
+  entryForm.className = 'container entry-form';
+  entriesList.className = 'container entries hidden';
+  data.view = 'entry-form';
+}
