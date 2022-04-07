@@ -23,6 +23,8 @@ function submitEvent(entry) {
   data.nextEntryId++;
   data.entries.unshift(formEntry);
   placeHolderImg.setAttribute('src', 'images/placeholder-image-square.jpg');
+  list.prepend(renderEntry(entry));
+  viewEntries();
   form.reset();
 }
 
@@ -89,4 +91,10 @@ function createEntries(event) {
   entryForm.className = 'container entry-form';
   entriesList.className = 'container entries hidden';
   data.view = 'entry-form';
+}
+
+if (data.view === 'entry-form') {
+  createEntries();
+} else {
+  viewEntries();
 }
