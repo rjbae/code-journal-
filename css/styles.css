@@ -89,10 +89,6 @@ h3 {
   padding-top: 12em;
 }
 
-/* .form {
-  display: none;
-} */
-
 .entries-header {
   font-family: "Proza Libre", sans-serif;
   font-size: 35px;
@@ -103,14 +99,17 @@ h3 {
   background-color: purple;
   color: white;
   width: 70px;
+  max-width: 100%;
   height: 30px;
   font-size: 16px;
   border: none;
 }
 
 .new-button {
-  text-align: right;
-  padding-top: 2.5em;
+  display: flex;
+  justify-content: right;
+  position: relative;
+  bottom: 4em;
 }
 
 .entries-list {
@@ -118,10 +117,9 @@ h3 {
 }
 
 .entry-img {
+  height: 360px;
   width: 100%;
-  height: 250px;
-  object-fit: contain;
-  margin-top: 5em;
+  object-fit: cover;
 }
 
 .entry-header {
@@ -137,6 +135,7 @@ h3 {
 p {
   font-family: sans-serif;
   line-height: 2em;
+  padding-left: 0.5em;
 }
 
 .navbar {
