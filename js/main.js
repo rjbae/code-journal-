@@ -13,7 +13,7 @@ function imageEvent(event) {
 var form = document.querySelector('.form');
 form.addEventListener('submit', submitEvent);
 
-function submitEvent(entry) {
+function submitEvent(event) {
   event.preventDefault();
   var formEntry = {};
   formEntry.title = form.elements.title.value;
@@ -23,7 +23,7 @@ function submitEvent(entry) {
   data.nextEntryId++;
   data.entries.unshift(formEntry);
   placeHolderImg.setAttribute('src', 'images/placeholder-image-square.jpg');
-  list.prepend(renderEntry(entry));
+  list.prepend(renderEntry(formEntry));
   viewEntries();
   form.reset();
 }
