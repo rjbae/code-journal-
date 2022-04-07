@@ -88,3 +88,65 @@ h3 {
   text-align: right;
   padding-top: 12em;
 }
+
+.entries-header {
+  font-family: "Proza Libre", sans-serif;
+  font-size: 35px;
+}
+
+.new-entry-button {
+  border-radius: 5px;
+  background-color: purple;
+  color: white;
+  width: 70px;
+  max-width: 100%;
+  height: 30px;
+  font-size: 16px;
+  border: none;
+}
+
+.new-button {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  bottom: 4em;
+}
+
+.entries-list {
+  list-style: none;
+}
+
+.entry-img {
+  height: 360px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.entry-header {
+  font-size: 30px;
+}
+
+.entry-text {
+  margin-top: 0;
+  font-family: sans-serif;
+  line-height: 30px;
+}
+
+p {
+  font-family: sans-serif;
+  line-height: 2em;
+  padding-left: 0.5em;
+}
+
+.navbar {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  font-family: "Proza Libre", sans-serif;
+}

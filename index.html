@@ -21,50 +21,70 @@
   <main>
     <header>
       <div class="container">
-        <h3>Code Journal</h3>
+        <div class="row">
+          <h3>Code Journal</h3>
+          <ul class="navbar">
+            <li><a data-view="entries" class="entriesNav" href="#entries">Entries</a></li>
+          </ul>
+        </div>
       </div>
     </header>
-    <div class="container">
+    <div class="container entry-form hidden" data-view="entry-form">
       <form class="form">
-        <div data-view="entry-form"></div>
-        <h2 class="new-entry">New Entry</h2>
-        <div class="row">
-          <div class="column-half">
-            <img src="images/placeholder-image-square.jpg" class="placeholder">
-          </div>
-          <div class="column-half">
-            <div class="form-container">
-              <div class="title-container">
+        <div class="view">
+          <h2 class="new-entry">New Entry</h2>
+          <div class="row">
+            <div class="column-half">
+              <img src="images/placeholder-image-square.jpg" class="placeholder">
+            </div>
+            <div class="column-half">
+              <div class="form-container">
+                <div class="title-container">
+                  <div class="label">
+                    <label for="titleForm">Title</label>
+                  </div>
+                  <div class="input">
+                    <input name="title" type="text" class="input-title" required>
+                  </div>
+                </div>
                 <div class="label">
-                  <label for="titleForm">Title</label>
+                  <label for="photoUrl">Photo URL</label>
                 </div>
                 <div class="input">
-                  <input name="title" type="text" class="input-title" required>
+                  <input name="photoUrl" type="url" class="photourl" required>
                 </div>
               </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="column-full">
               <div class="label">
-                <label for="photoUrl">Photo URL</label>
+                <label for="notes">Notes</label>
               </div>
               <div class="input">
-                <input name="photoUrl" type="url" class="photourl" required>
+                <textarea name="notes" class="notes" style="resize: none;" rows="5" required></textarea>
+              </div>
+              <div class="save-button">
+                <button type="submit" class="save">SAVE</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="column-full">
-            <div class="label">
-              <label for="notes">Notes</label>
-            </div>
-            <div class="input">
-              <textarea name="notes" class="notes" style="resize: none;" rows="5" required></textarea>
-            </div>
-            <div class="save-button">
-              <button type="submit" class="save">SAVE</button>
-            </div>
+      </form>
+    </div>
+    <div class="container entries" data-view="entries">
+      <div class="row">
+        <div class="column-full">
+          <h3 class="entries-header">Entries</h3>
+          <div class="new-button">
+            <button class="new-entry-button" type="submit">NEW</button>
           </div>
         </div>
-    </div>
+      </div>
+      <div class="view">
+        <ul class="entries-list">
+        </ul>
+      </div>
   </main>
   <script src="js/data.js"></script>
   <script src="js/main.js"></script>
